@@ -20,7 +20,7 @@ public class LoginController extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		
 		String name = request.getParameter("name");
-		String passWord = request.getParameter("passWord");
+		String passWord = request.getParameter("password");
 		
 		LoginBean bean = new LoginBean();
 		bean.setName(name);

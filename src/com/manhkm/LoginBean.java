@@ -6,7 +6,6 @@ public class LoginBean {
 	public LoginBean() {}
 	
 	public LoginBean(String name, String password) {
-		super();
 		this.name = name;
 		this.password = password;
 	}
@@ -25,11 +24,10 @@ public class LoginBean {
 	}
 	
 	public boolean validate() {
-		if("admin".equals(password)) {
+		if("admin".equals(password) && "manhkm".equals(name)) {
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
 }

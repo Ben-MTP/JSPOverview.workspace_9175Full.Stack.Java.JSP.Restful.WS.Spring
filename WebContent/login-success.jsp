@@ -11,7 +11,7 @@
   <p>You are successfully logged in!</p>
   <%
       LoginBean bean = (LoginBean) request.getAttribute("bean");
-      out.print("Welcome, " + bean.getName());
+      out.print("Welcome System, " + bean.getName());
   %>
 </body>
 </html>
